@@ -24,3 +24,9 @@ Show) + `ask configure`. Everything after that is automated.
 - Quizlet set import (their export gives term/definition text)
 - Streaks + daily goal (Duolingo mechanic; Reminders API for study nudges)
 - Echo Show 15 widget for the fridge notes board
+
+## 2026-07-15 — deployed to Alexa-hosted
+- Skill ID: `amzn1.ask.skill.b1f80163-d80e-424e-ac6d-85c84f6b2e9f` (vendor M1RK36PT6B98GB, us-east-1, auto-enabled on account)
+- Deploy vehicle: CodeCommit repo `b1f80163-...` — push to `master` = deploy. Credential helper wired via ask-cli; re-clone anytime with `ask init --hosted-skill-id <id>`.
+- Simulator smoke test passed: "open flash deck" → welcome speech w/ 3 decks + APL RenderDocument.
+- LESSON: `ask new` driven by expect mangles typed skill name (prompt echo re-triggers matches) — name defaulted to "hosted hello world"; harmless, first manifest push renames it.
