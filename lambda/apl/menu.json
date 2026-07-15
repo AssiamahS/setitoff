@@ -1,0 +1,95 @@
+{
+  "type": "APL",
+  "version": "2023.2",
+  "mainTemplate": {
+    "parameters": ["payload"],
+    "items": [
+      {
+        "type": "Frame",
+        "width": "100vw",
+        "height": "100vh",
+        "backgroundColor": "#10151F",
+        "item": {
+          "type": "Container",
+          "width": "100vw",
+          "height": "100vh",
+          "paddingLeft": "6vw",
+          "paddingRight": "6vw",
+          "paddingTop": "4vh",
+          "direction": "column",
+          "items": [
+            {
+              "type": "Text",
+              "text": "Flash Deck",
+              "fontSize": "44dp",
+              "fontWeight": "700",
+              "color": "#FFFFFF"
+            },
+            {
+              "type": "Text",
+              "text": "Say “study” and a deck name — or tap one",
+              "fontSize": "24dp",
+              "color": "#FFFFFF",
+              "opacity": 0.5,
+              "paddingBottom": "3vh"
+            },
+            {
+              "type": "Sequence",
+              "grow": 1,
+              "width": "100%",
+              "data": "${payload.menuData.decks}",
+              "items": [
+                {
+                  "type": "TouchWrapper",
+                  "width": "100%",
+                  "onPress": [
+                    {
+                      "type": "SendEvent",
+                      "arguments": ["study", "${data.id}"]
+                    }
+                  ],
+                  "item": {
+                    "type": "Frame",
+                    "width": "100%",
+                    "backgroundColor": "#1E2735",
+                    "borderRadius": "16dp",
+                    "item": {
+                      "type": "Container",
+                      "direction": "row",
+                      "width": "100%",
+                      "paddingLeft": "24dp",
+                      "paddingRight": "24dp",
+                      "paddingTop": "20dp",
+                      "paddingBottom": "20dp",
+                      "justifyContent": "spaceBetween",
+                      "alignItems": "center",
+                      "items": [
+                        {
+                          "type": "Text",
+                          "text": "${data.name}",
+                          "fontSize": "32dp",
+                          "fontWeight": "600",
+                          "color": "#FFFFFF"
+                        },
+                        {
+                          "type": "Text",
+                          "text": "${data.count} cards",
+                          "fontSize": "24dp",
+                          "color": "#8FD6A8"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "type": "Frame",
+                  "height": "12dp"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

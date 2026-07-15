@@ -1,0 +1,16 @@
+{
+  "id": "spanish",
+  "name": "Spanish Basics",
+  "cards": [
+    { "front": "Hola", "back": "Hello" },
+    { "front": "Gracias", "back": "Thank you" },
+    { "front": "Por favor", "back": "Please" },
+    { "front": "Buenos días", "back": "Good morning" },
+    { "front": "Buenas noches", "back": "Good night" },
+    { "front": "¿Cómo estás?", "back": "How are you?" },
+    { "front": "Me llamo...", "back": "My name is..." },
+    { "front": "Agua", "back": "Water" },
+    { "front": "Comida", "back": "Food" },
+    { "front": "Adiós", "back": "Goodbye" }
+  ]
+}

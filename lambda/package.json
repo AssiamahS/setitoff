@@ -1,0 +1,11 @@
+{
+  "name": "flash-deck",
+  "version": "0.1.0",
+  "description": "Voice flashcards with pictures + spaced repetition + voice notes for Echo Show",
+  "main": "index.js",
+  "dependencies": {
+    "ask-sdk-core": "^2.14.0",
+    "ask-sdk-model": "^1.86.0",
+    "ask-sdk-s3-persistence-adapter": "^2.14.0"
+  }
+}

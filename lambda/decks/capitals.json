@@ -1,0 +1,16 @@
+{
+  "id": "capitals",
+  "name": "World Capitals",
+  "cards": [
+    { "front": "France", "back": "Paris", "image": "https://flagcdn.com/w640/fr.png" },
+    { "front": "Ghana", "back": "Accra", "image": "https://flagcdn.com/w640/gh.png" },
+    { "front": "Japan", "back": "Tokyo", "image": "https://flagcdn.com/w640/jp.png" },
+    { "front": "Brazil", "back": "Brasília", "image": "https://flagcdn.com/w640/br.png" },
+    { "front": "Canada", "back": "Ottawa", "image": "https://flagcdn.com/w640/ca.png" },
+    { "front": "Egypt", "back": "Cairo", "image": "https://flagcdn.com/w640/eg.png" },
+    { "front": "Australia", "back": "Canberra", "image": "https://flagcdn.com/w640/au.png" },
+    { "front": "South Korea", "back": "Seoul", "image": "https://flagcdn.com/w640/kr.png" },
+    { "front": "Nigeria", "back": "Abuja", "image": "https://flagcdn.com/w640/ng.png" },
+    { "front": "Mexico", "back": "Mexico City", "image": "https://flagcdn.com/w640/mx.png" }
+  ]
+}

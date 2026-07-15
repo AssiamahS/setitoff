@@ -1,0 +1,109 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "flash deck",
+      "intents": [
+        { "name": "AMAZON.CancelIntent", "samples": [] },
+        { "name": "AMAZON.HelpIntent", "samples": [] },
+        { "name": "AMAZON.StopIntent", "samples": [] },
+        { "name": "AMAZON.NavigateHomeIntent", "samples": [] },
+        { "name": "AMAZON.FallbackIntent", "samples": [] },
+        { "name": "AMAZON.YesIntent", "samples": [] },
+        { "name": "AMAZON.NoIntent", "samples": [] },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "StudyIntent",
+          "slots": [{ "name": "deck", "type": "DECK" }],
+          "samples": [
+            "study {deck}",
+            "quiz me on {deck}",
+            "start {deck}",
+            "practice {deck}",
+            "review {deck}",
+            "study",
+            "quiz me",
+            "let's study",
+            "start studying"
+          ]
+        },
+        {
+          "name": "FlipIntent",
+          "samples": [
+            "flip",
+            "flip it",
+            "flip the card",
+            "show answer",
+            "show me the answer",
+            "reveal",
+            "turn it over",
+            "answer"
+          ]
+        },
+        {
+          "name": "GotItIntent",
+          "samples": [
+            "got it",
+            "i got it",
+            "i knew it",
+            "knew it",
+            "correct",
+            "i was right",
+            "nailed it",
+            "easy"
+          ]
+        },
+        {
+          "name": "MissedIntent",
+          "samples": [
+            "missed it",
+            "i missed it",
+            "wrong",
+            "i was wrong",
+            "no idea",
+            "i forgot",
+            "i don't know",
+            "don't know"
+          ]
+        },
+        {
+          "name": "AddNoteIntent",
+          "slots": [{ "name": "text", "type": "AMAZON.SearchQuery" }],
+          "samples": [
+            "add a note {text}",
+            "note {text}",
+            "make a note {text}",
+            "new note {text}",
+            "remember {text}",
+            "post it {text}"
+          ]
+        },
+        {
+          "name": "ListDecksIntent",
+          "samples": [
+            "list decks",
+            "list my decks",
+            "what decks are there",
+            "show my decks",
+            "show decks",
+            "decks",
+            "menu"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "DECK",
+          "values": [
+            { "name": { "value": "world capitals", "synonyms": ["capitals", "geography", "the capitals"] } },
+            { "name": { "value": "spanish basics", "synonyms": ["spanish", "the spanish one"] } },
+            { "name": { "value": "security plus", "synonyms": ["security", "cyber security", "comptia", "cert prep"] } },
+            { "name": { "value": "my notes", "synonyms": ["notes", "the notes", "my note"] } }
+          ]
+        }
+      ]
+    }
+  }
+}
